@@ -1,0 +1,8 @@
+# portfolio
+This directory contains a summary of the projects of backend, frontend and UX-UI, made during 2018 and 2020 the school years of D.A.M in the C.E.V. by Carmen Navarro Timón.
+
+
+Projects done in cli angle have node_modules directories deleted to reduce the export size.
+Before running the project it must be installed with the command:
+
+npm install

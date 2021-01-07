@@ -1,0 +1,167 @@
+<div class="container divcenter">
+    <div class="row">
+        <div class="col-md-12">
+           <h3 [class.titleLogin]= "this.titleLogin">{{this.title}}</h3> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="email" [(ngModel)]="this.usuario" (keyup)="this.validateEmail($event)" class="form-control" id="usuario" >
+                
+              </div>
+              <div>
+                  {{this.msgUsuario}}
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" [(ngModel)]="this.password" class="form-control" id="password">
+              </div>
+              <div *ngIf = "this.validatePassword">
+                  "La contraseña debe tener más de 6 caracteres"
+              </div>
+              <div><h3>{{this.usuario}}</h3></div>
+              <div><h3>{{this.password}}</h3></div>
+              <br> <br>
+              <div>
+                <button type="submit" (click)="this.envioLogin()" class="btn btn-primary">Enviar</button>
+            </div> 
+            <br> <br>
+              <div class="row">
+                  <div class="col-md-12">
+                      <ul>
+                          <li *ngFor = "let marcaFurgos of this.arrayCoches">
+                              {{marcaFurgos}}
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+
+              <div>Moneda : {{this.dataCurrency | currency: 'EUR'}}</div>
+              <div>Fecha : {{this.dataDate | date}}</div>
+              <div>Decimal : {{this.dataDecimal | number: '3.1-2'}}</div>
+              <div>Json : {{this.dataJson | json}}</div>
+              <div>String : {{this.dataString | uppercase}}  {{this.dataString | reversed | lowercase}}</div>
+              <div>Percent : {{this.dataPercent | percent: '2.1-2'}}</div>
+              <div>Array : {{this.dataSlice | slice:1:4}}</div>
+              <div> '' </div>
+
+              <div>
+                <card-angular></card-angular>
+     
+             </div>
+
+             <div>
+ 
+                <carousel-angular></carousel-angular>
+     
+             </div>
+
+             <div> <br> 
+                <H3>FORMULARIO</H3> 
+                <br>
+             
+             </div>
+
+             <form>
+    
+    
+                <div class="form-group row">
+                  <label for="text1" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="text1">
+                  </div>
+                </div>
+                <div class="form-group row ">
+                    <label for="text2" class="col-sm-2 col-form-label">Surname</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="text2">
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Surname1</label>
+                      <input type="text" class="form-control" id="Surname1">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Surname</label>
+                      <input type="text" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+            
+           
+            
+                <div class="form-group row">
+                    <label for="numberT" class="col-sm-2 col-form-label">Telephone</label>
+                    <div class="col-sm-10">
+                      <input type="tel" class="form-control" id="numberT">
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label for="text3" class="col-sm-2 col-form-label">Address</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="text3">
+                    </div>        
+                </div>
+            
+                <div class="form-group row">
+                    <label for="text4" class="col-sm-2 col-form-label">City</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="text4">
+                    </div>        
+                </div>
+            
+                <div class="form-group row ">
+                    <label for="text5" class="col-sm-2 col-form-label">Province</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="text5">
+                    </div>        
+                </div>
+            
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword4" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+               
+                <div class="form-group row">
+                  <div class="col-sm-2"> Accept terms of use</div>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                       
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+              </form>
+              
+            
+        </div>
+     
+    </div>
+</div>

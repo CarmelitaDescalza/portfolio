@@ -1,0 +1,17 @@
+.divcenter{
+    
+    background-color:azure;  
+    justify-content: center;
+    align-items: center;
+    
+    padding: 40pt;
+    font-size:large;  
+  }
+
+  .margen{
+    margin-top: 20pt;
+    margin-bottom: 30pt;
+  }
+  .head{
+    text-align: center;
+  }

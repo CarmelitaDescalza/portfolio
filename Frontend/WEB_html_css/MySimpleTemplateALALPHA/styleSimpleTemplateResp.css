@@ -1,0 +1,672 @@
+/*resetcss*/
+
+/*
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ HTML5 display-role reset for older browsers 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*resetcss*/
+
+/*fuentes*/
+
+/* font-family:  'News Cycle', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Gamja+Flower&family=Homemade+Apple&family=News+Cycle&family=Over+the+Rainbow&family=Patrick+Hand+SC&display=swap');
+
+
+
+/*fuentes*/
+
+/*menuHamburguesaCss*/
+
+
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    tab-size: 2rem;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--fondoNavA);
+    /*    max-width: calc(80% - 100px);*/
+    /*    max-width: 80%;*/
+    background: var(--fondoNavB);
+    /*
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+    
+*/
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    /*    display: block;*/
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    font-size: 40px;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.respmenu {
+    color: white;
+    position: relative;
+    background: var(--fondoNavA);
+    min-height: 60px;
+
+}
+
+.respmenu nav {
+    display: none;
+    /*    margin-top: 20%;*/
+    margin-left: 60%;
+
+}
+
+.respmenu nav li {
+    list-style: none;
+}
+
+.respmenu input:checked ~ nav {
+    display: block;
+
+}
+
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+#menuOff {
+    background-color: var(--fondoNavA);
+}
+
+
+/*menuHamburguesaCss*/
+
+/*general style*/
+
+html {
+    /*    color*/
+    --principal: #232390;
+    --secundario: #009006;
+    --fondoNavA: #919191;
+    --fondoNavB: #D3D4D4;
+    /*     tipografia*/
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#menuOn {
+    font-size: 2rem;
+}
+
+.logo {
+    width: 300px;
+    /*    height: 20%;*/
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 70px;
+    left: 5%;
+}
+
+.logo img {
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+
+
+.article {
+    width: 100%;
+/*    height: 4200px;*/
+    background-color: cornflowerblue;
+}
+
+.showcase {
+    width: 100%;
+    height: 600px;
+    margin: 10px auto;
+    padding: 5%;
+    background-color: azure;
+    background-image: url(images/lowres%20jpg%2072dpi-WVF.04.B.0330.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.filaPral {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+
+    background-color: darkcyan;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/*    padding: 5%;*/
+/*    Probando con display flex*/
+/*    flex-wrap: wrap;*/
+
+.col {
+
+    width: 45%;
+    height: 550px;
+    background-color: white;
+
+}
+
+/*    Probando con display flex*/
+
+
+/*    Para cuando haga columnas sirve el margin auto lo centra*/
+/*    margin: auto;*/
+/*    justify-content:space-around;*/
+/*    margin-right: 10px;*/
+/*    margin-top: 10px;*/
+/*    Probando con float: left*/
+/*        float: left;*/
+
+.imagenArtPral img {
+    width: 100%;
+    /*    height: 550px;*/
+    background-image: url(images/lowres%20jpg%2072dpi-WVF.04.B.0330.jpg);
+    background: center center no-repeat;
+    background-size: cover;
+    transform: translate(0, 15%);
+    margin: auto 0;
+}
+
+.textoArtPral {
+    padding: 10px 20px;
+    text-align: justify-all;
+    overflow: hidden;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 100;
+}
+
+.filaGrill {
+    width: 100%;
+    /*    height: 1000px;*/
+    margin: 10px auto;
+    padding: 3.5%;
+    background-color: darkcyan;
+    /*
+    display: flex;
+    flex-direction: row;
+*/
+
+}
+
+.subFilaGrill {
+    /*    Probando con display flex*/
+    width: 100%;
+    background-color: white;
+    /*    height: 450px;*/
+    margin: 10px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.subFilaGrill img {
+    width: 100%;
+}
+
+
+.modH {
+    width: 300px;
+    height: 182px;
+    background-color: darkorange;
+}
+
+.modV {
+    width: 300px;
+    height: 377.5px;
+    background-color: yellow;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    color: white;
+    overflow: hidden;
+    /*    margin: auto;*/
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footerA {
+    width: 33.3%;
+    height: 100%;
+    background-color: aquamarine;
+
+    margin: auto;
+    float: left;
+    /*    overflow: auto;*/
+    text-align: center;
+}
+
+.footerA li {
+
+    text-align: center;
+    margin: auto;
+    filter: grayscale();
+}
+
+.redes {
+    overflow: auto;
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.redes {
+    overflow: auto;
+}
+
+.redes li {
+    float: left;
+    width: 20%;
+    list-style: none;
+    color: gray;
+}
+
+.redes i {
+    color: gray;
+}
+
+.contacto {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    color: gray;
+    overflow: hidden;
+}
+
+.contacto li {
+    float: none;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.copirigth {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+    color: gray;
+}
+
+.copirigth a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+/*general style*/
+
+/*responsive way*/
+
+/*
+@media screen and (max-width: 1680px) and (min-width: 1200px) {
+
+    .container {
+        width: 1400px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .container {
+        width: 1024px;
+        margin: auto;
+    }
+
+}
+
+.filaPral {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    
+    background-color: darkcyan;
+    overflow: hidden;
+   
+    display: flex;
+    flex-direction: row;
+ 
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.col {
+  
+    width: 45%;
+    
+    height: 550px;
+    background-color: white;    
+
+}
+
+*/
+@media screen and (max-width: 768px) {
+   
+   .logo {
+    width: 200px;
+    /*    height: 20%;*/
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 70px;
+    left: 1%;
+}
+
+    .article {
+        height: 4000px;
+    }
+
+    .filaPral {
+        height: 900px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .col {
+        width: 100%;
+        background-color: white;
+        margin: 10px auto;
+    }
+
+    .imagenArtPral img {
+        /*        width: 100%;*/
+        object-fit: contain;
+        /*        transform: translate(0, 15%);*/
+        margin: auto;
+    }
+
+    .textoArtPral {
+        padding: 10px 20px;
+        text-align: justify-all;
+        overflow: hidden;
+        font-family: 'News Cycle', sans-serif;
+        font-weight: 100;
+    }
+
+    .subFilaGrill {
+        /*    Probando con display flex*/
+        width: 100%;
+        background-color: white;
+        /*    height: 850px;*/
+        margin: 10px auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*    overflow: auto;*/
+    }
+
+    .section {
+        width: 100%;
+/*        height: 8000px;*/
+    }    
+
+    
+    #footer {
+/*
+        position: absolute;
+        bottom: 2px;
+        left: 1px;
+*/
+        width: 100%;
+        height: 150px;
+        background-color: gray;
+        color: white;
+        overflow: hidden;
+        /*    margin: auto;*/
+        text-align: center;
+        font-size: 1rem;
+    }    
+   
+    .contacto{
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 10px auto;
+        padding: 0px;        
+    }
+    .copirigth{
+        font-size: 1rem;
+    }
+}
+
+/*
+@media screen and (max-width: 768px) and (min-width: 480px) {
+
+    .container {
+        width: 768px;
+        margin: auto;
+    }
+    .filaPral{
+        display: none;
+    }
+    .col{
+        width: 100%;
+        background-color: chartreuse;
+    }
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    .container {
+        width: 480px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 320px) and (min-width: 320px) {
+
+    .container {
+        width: 320px;
+        margin: auto;
+    }
+}
+*/
+
+/*responsive way*/

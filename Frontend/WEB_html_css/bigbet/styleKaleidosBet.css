@@ -589,6 +589,7 @@ body {
     width: 70%;
     height: 100%;
 }
+
 .tituloCurriculum {
     text-align: center;
     margin: auto;
@@ -771,6 +772,103 @@ th {
     border-right: 1px solid aqua;
     padding: 10px;
     /*    border-radius: 40%;*/
+}
+
+/*paginas de proyectos*/
+.tituloPortfolioPage {
+    text-align: right;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.tituloPortfolioPage a {
+    font-family: 'News Cycle',
+        sans-serif;
+    color: var(--fondoNavA);
+    text-align: center;
+    text-decoration: none;
+    /*    margin: 10% 30%;*/
+}
+
+.tituloPortfolioPage a:hover {
+    color: orange;
+    font-weight: 600;
+
+}
+.tituloPortfolioGitHubPage {
+    text-align: left;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.tituloPortfolioGitHubPage a {
+    font-family: 'News Cycle',
+        sans-serif;
+    color: var(--fondoNavA);
+    text-align: center;
+    text-decoration: none;
+    /*    margin: 10% 30%;*/
+}
+
+.tituloPortfolioGitHubPage a:hover {
+    color: deeppink;
+    font-weight: 600;
+
+}
+
+
+.tituloProyectosPage {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.tituloProyectosPage a {
+    font-family: 'News Cycle',
+        sans-serif;
+    color: var(--fondoNavA);
+    text-align: center;
+    text-decoration: none;
+    /*    margin: 10% 30%;*/
+}
+
+.tituloProyectosPage a:hover {
+    color: aquamarine;
+    font-weight: 600;
+
+}
+
+.iconoProyectosPage {
+    /*    width: 30%;*/
+    height: 120px;
+    background-image: url(proyectosColor.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+.imagenPralProyectPage{
+    width: 100%;
+    height: auto; 
+    margin: auto;
+    text-align: center;
+}
+.imagenPralProyectPage img{
+    width: 100%;
+    height: auto; 
+    margin: auto;
+    text-align: center;
+}
+.textoPralProyectPage{
+    margin: 20px auto;
+    color: grey;
+    text-align:center;
 }
 
 

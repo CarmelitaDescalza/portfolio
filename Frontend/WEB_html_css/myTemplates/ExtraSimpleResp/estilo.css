@@ -1,0 +1,215 @@
+/*Hoja de estilo para Juan Rudder*/
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Patrick+Hand+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Over+the+Rainbow&family=Patrick+Hand+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Homemade+Apple&family=Over+the+Rainbow&family=Patrick+Hand+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Gamja+Flower&family=Homemade+Apple&family=News+Cycle&family=Over+the+Rainbow&family=Patrick+Hand+SC&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: center center fixed no-repeat;
+    background-size: cover;
+
+}
+
+.containerGeneral {
+    /*    Si queremos poner el fondo aquí en vez de ene el body*/
+
+    /*
+    width: 100%;
+    height: 1024px;
+    background-size: cover;
+*/
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-family: 'News Cycle', sans-serif;
+
+}
+
+nav div {
+    float: left;
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav div :hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav div :hover,
+.actual {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 20px;
+}
+
+header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+header img {
+    width: 300px;
+}
+
+article {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    width: 50%;
+    margin: auto;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Homemade Apple', cursive
+}
+
+aside {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+aside img {
+    width: 50px;
+    filter: grayscale();
+}
+
+aside img:hover {
+    filter: none;
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    /*
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+*/
+    nav a {
+    font-size: 1.5rem;
+}
+
+    nav div {
+        float: none;
+        padding: 5px 20px;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: right;
+        
+    }
+
+    nav div :hover,
+    .actual {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 5px 10px;
+    }
+
+    header {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    header img {
+        width: 220px;
+    }
+
+    article {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        width: 70%;
+        margin: auto;
+        color: white;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        /*    transform: translate(-50%,-50%);*/
+        font-family: 'Homemade Apple', cursive
+    }
+
+    aside {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    /*
+  .menu, .main, .right {
+    width: 100%;
+  }
+*/
+    nav div {
+        float: none;
+        padding: 5px 20px;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+
+    nav div :hover,
+    .actual {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 5px 10px;
+    }
+
+    header {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    header img {
+        width: 170px;
+    }
+
+    article {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        width: 70%;
+        margin: auto;
+        color: white;
+        position: absolute;
+        top: 550px;
+        left: 50%;
+        /*    transform: translate(-50%,-50%);*/
+        font-family: 'Homemade Apple', cursive
+    }
+
+    aside {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+}

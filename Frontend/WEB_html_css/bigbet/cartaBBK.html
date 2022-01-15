@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <link rel="icon" href="autoretratoLinea.png">
-<!--    <meta name="viewport" content="width=device-width; initial-scale = 1.0">-->
+    <meta name="viewport" content="width=device-width; initial-scale = 1.0">
 </head>
 
 <body>
@@ -39,22 +39,52 @@
 
         <!--Logo-->
         <div class="logo">
-            <a href="https://www.alalpha.es/bigbet/"><img src="simple.png" alt=""></a>
+            <a href="index.html"><img src="simple.png" alt=""></a>
 
         </div>
 
 
         <!--Carta-->
+        <div class="paginasMarco">
 
-        <div class="tituloCarta">
-            <a href="cartaBigBet.pdf" target="_blank">CARTA DE MOTIVACIÓN</a>
+
+
+            <div class="tituloCarta">
+                <a href="" target="_blank">CARTA DE MOTIVACIÓN</a>
+            </div>
+
+            <div><a href="" target="_blank">
+                    <div class="iconoCarta">
+
+                    </div>
+                </a>
+            </div>
+            <!--Formulario para introducir el password para ir a la carta de motivación-->
+            <div class="password">
+                <p style="margin-top: 10px">
+                    Introduzca el pasword y pulse el botón.
+                </p>
+
+                <script LANGUAGE="JavaScript">
+                    function Entrar(password) {
+                        window.location = password + ".html"
+                    }
+                </script>
+
+                <form>
+                    <ul style="list-style: none;">
+                        <li>
+                            <input type="password" name="palabra" size="25" style=" height:40px; margin-bottom:10px; margin-top:10px; ">
+                            <input class="botonGo" type="button" value="GO" onClick="Entrar(this.form.palabra.value)" name="button" style="height:40px;margin-bottom: 10px; margin-top: 10px; font-size: 1.5rem; font-family:'News Cycle',
+        sans-serif; font-weight: 600;">
+                        </li>
+                    </ul>
+                    <p>
+
+                    </p>
+                </form>
+            </div>
         </div>
-
-        <div><a href="cartaBigBet.pdf" target="_blank">
-                <div class="iconoCarta">
-
-                </div>
-            </a></div>
 
 
 
@@ -65,7 +95,7 @@
         </div>
 -->
 
-<!--
+        <!--
         <div class="contenedorPral">
 
             <div class="contenedorCentra">
@@ -136,6 +166,4 @@
 
     </div>
 
-</body>
-
-</html>
+</body></html>

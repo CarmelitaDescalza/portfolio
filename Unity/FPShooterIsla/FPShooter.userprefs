@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asset\Scripts\LivesSistem.cs">
+    <Files>
+      <File FileName="Assets\Asset\Scripts\ShootPlayer.cs" Line="44" Column="97" />
+      <File FileName="Assets\Asset\Scripts\ShootEnemy.cs" Line="73" Column="49" />
+      <File FileName="Assets\Asset\Scripts\LivesSistem.cs" Line="95" Column="4" />
+      <File FileName="..\JuegoMazmorra_EjFinal_Lesson4\Assets\Assets\Scripts\ControlPlayerBall.cs" Line="125" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

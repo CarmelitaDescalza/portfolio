@@ -1,0 +1,4 @@
+# Starting compiling UnityEngine.TestRunner.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-1d031929752b404479e1084d20e4569a
+# Starting compiling Assembly-CSharp-firstpass.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-a965f291e5991514c9376a3bc069401a
